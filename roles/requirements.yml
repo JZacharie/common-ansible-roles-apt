@@ -3,3 +3,9 @@ roles:
   - name: 'robertdebock.update'
   - name: 'arillso.sshd'
   - name: 'jonaspammer.apache2'
+  - name: mrlesmithjr.chrony
+  - name: Oefenweb.locales
+  - name: robertdebock.cron
+  - name: Oefenweb.postfix
+  - name: geerlingguy.php
+  - name: galaxyproject.proftpd
