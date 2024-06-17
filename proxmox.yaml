@@ -2,5 +2,8 @@ proxmox_aquabot:
   hosts:
     vm121:
       ansible_host: 192.168.0.121
+      ANSIBLE_HOST_KEY_CHECKING: False
     vm122:
       ansible_host: 192.168.0.122
+      ANSIBLE_HOST_KEY_CHECKING: False
+
