@@ -5,6 +5,7 @@ roles:
   - name: 'jonaspammer.apache2'
   - name: mrlesmithjr.chrony
   - name: Oefenweb.locales
+  - name: Oefenweb.mailcatcher
   - name: robertdebock.cron
   - name: Oefenweb.postfix
   - name: geerlingguy.php
