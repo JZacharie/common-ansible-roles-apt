@@ -1,0 +1,21 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: true
+  roles:
+    - role: robertdebock.update
+      vars:
+        update_reboot: false
+        update_cache_valid_time: 1
+        update_autoremove: false
+    - role: arillso.sshd
+    - role: mrlesmithjr.chrony
+    - role: robertdebock.cron
+    - role: geerlingguy.php
+    - role: Oefenweb.locales
+    - role: Oefenweb.mailcatcher
+    - role: Oefenweb.postfix
+    - role: galaxyproject.proftpd
+    - role: ontic.magento
+...
