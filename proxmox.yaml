@@ -1,0 +1,6 @@
+proxmox_aquabot:
+  hosts:
+    vm121:
+      ansible_host: 192.168.0.121
+    vm122:
+      ansible_host: 192.168.0.122
