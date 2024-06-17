@@ -5,7 +5,3 @@
   gather_facts: true
   roles:
     - role: arillso.sshd
-#      vars:
-#        update_reboot: false
-#        update_cache_valid_time: 1
-#        update_autoremove: false
