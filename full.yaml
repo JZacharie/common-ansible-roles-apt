@@ -12,7 +12,7 @@
     - role: arillso.sshd
     - role: mrlesmithjr.chrony
     - role: robertdebock.cron
-    - role: geerlingguy.php
+    # - role: geerlingguy.php
     - role: Oefenweb.locales
     - role: Oefenweb.mailcatcher
     - role: Oefenweb.postfix
