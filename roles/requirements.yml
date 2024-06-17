@@ -9,5 +9,7 @@ roles:
   - name: robertdebock.cron
   - name: Oefenweb.postfix
   - name: geerlingguy.php
+  - name: fradee.magentotools
+  - name: ontic.magento
   - name: galaxyproject.proftpd
     version: '0.3.2' 
