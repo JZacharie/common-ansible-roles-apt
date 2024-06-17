@@ -13,5 +13,6 @@ roles:
   - name: geerlingguy.php
   - name: fradee.magentotools
   - name: ontic.magento
+  - name: igor_nikiforov.sysctl
   - name: galaxyproject.proftpd
     version: '0.3.2' 
