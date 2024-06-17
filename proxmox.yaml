@@ -1,3 +1,4 @@
+---
 proxmox_aquabot:
   hosts:
     vm122:
@@ -20,3 +21,20 @@ proxmox_aquabot:
       ansible_host: "192.168.0.127"
       ansible_host_key_checking: False
       check_mode: true
+    pi201:
+      ansible_host: "192.168.0.201"
+      ansible_host_key_checking: False      
+      check_mode: true      
+    pi202:
+      ansible_host: "192.168.0.202"
+      ansible_host_key_checking: False      
+      check_mode: true      
+    pi203:
+      ansible_host: "192.168.0.203"
+      ansible_host_key_checking: False      
+      check_mode: true
+    pi204:
+      ansible_host: "192.168.0.204"
+      ansible_host_key_checking: False      
+      check_mode: true      
+...
