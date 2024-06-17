@@ -8,6 +8,8 @@ roles:
   - name: Oefenweb.mailcatcher
   - name: robertdebock.cron
   - name: Oefenweb.postfix
+  - name: robertdebock.httpd
+  - name: robertdebock.php     
   - name: geerlingguy.php
   - name: fradee.magentotools
   - name: ontic.magento

@@ -18,4 +18,6 @@
     - role: Oefenweb.postfix
     - role: galaxyproject.proftpd
     - role: ontic.magento
+    - role: robertdebock.httpd
+    - role: robertdebock.php    
 ...
