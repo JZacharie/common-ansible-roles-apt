@@ -12,9 +12,8 @@
     - role: arillso.sshd
     - role: mrlesmithjr.chrony
     - role: robertdebock.cron
-    # - role: geerlingguy.php
     - role: Oefenweb.locales
-    # - role: Oefenweb.mailcatcher
+    - role: ElaoInfra.mailcatcher
     - role: Oefenweb.postfix
     - role: galaxyproject.proftpd
     - role: ontic.magento
