@@ -2,3 +2,4 @@
 roles:
   - name: 'robertdebock.update'
   - name: 'arillso.sshd'
+  - name: 'jonaspammer.apache2'
