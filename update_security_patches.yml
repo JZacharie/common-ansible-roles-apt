@@ -1,0 +1,40 @@
+---
+- name: Apply security patches one by one
+  hosts: ubuntu
+  serial: 1
+  become: yes
+  tasks:
+    - name: Update apt cache
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Upgrade only security updates
+      ansible.builtin.apt:
+        upgrade: full
+        autoremove: yes
+        dpkg_options: 'force-confdef,force-confold'
+      register: upgrade_result
+
+    - name: Check if a reboot is required
+      ansible.builtin.stat:
+        path: /var/run/reboot-required
+        get_md5: no
+      register: reboot_required
+
+    - name: Reboot the machine if required
+      ansible.builtin.reboot:
+        msg: "Rebooting after applying security updates"
+        connect_timeout: 5
+        reboot_timeout: 600
+        pre_reboot_delay: 5
+        post_reboot_delay: 30
+      when: reboot_required.stat.exists
+
+    - name: Wait for the machine to be up after reboot
+      ansible.builtin.wait_for:
+        port: 22
+        delay: 30
+        timeout: 300
+        state: started
+        host: "{{ ansible_host }}"
+      when: reboot_required.stat.exists
