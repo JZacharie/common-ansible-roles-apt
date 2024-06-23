@@ -1,0 +1,20 @@
+---
+proxmox_aquabot_custom:
+  hosts:
+    vm100:
+      ansible_host: "192.168.0.100"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm101:
+      ansible_host: "192.168.0.101"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm103:
+      ansible_host: "192.168.0.103"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm104:
+      ansible_host: "192.168.0.104"
+      ansible_host_key_checking: False      
+      check_mode: False    
+...
