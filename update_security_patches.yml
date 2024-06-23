@@ -1,6 +1,6 @@
 ---
 - name: Apply security patches one by one
-  hosts: ubuntu
+  hosts: all
   serial: 1
   become: yes
   tasks:
