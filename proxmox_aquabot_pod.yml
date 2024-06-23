@@ -1,0 +1,65 @@
+---
+proxmox_aquabot_pod:
+  hosts:
+    vm100:
+      ansible_host: "192.168.0.100"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm101:
+      ansible_host: "192.168.0.101"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm102:
+      ansible_host: "192.168.0.102"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm105:
+      ansible_host: "192.168.0.105"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm106:
+      ansible_host: "192.168.0.106"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm107:
+      ansible_host: "192.168.0.107"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm115:
+      ansible_host: "192.168.0.115"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm119:
+      ansible_host: "192.168.0.119"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm120:
+      ansible_host: "192.168.0.120"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm121:
+      ansible_host: "192.168.0.121"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm122:
+      ansible_host: "192.168.0.122"
+      ansible_host_key_checking: False      
+      check_mode: False
+    vm123:
+      ansible_host: "192.168.0.123"
+      ansible_host_key_checking: False
+      check_mode: False
+    vm124:
+      ansible_host: "192.168.0.124"
+      ansible_host_key_checking: False
+      check_mode: False
+    vm125:
+      ansible_host: "192.168.0.125"
+      ansible_host_key_checking: False
+      check_mode: False
+    vm126:
+      ansible_host: "192.168.0.126"
+      ansible_host_key_checking: False      
+      check_mode: False
+
+...
