@@ -16,7 +16,10 @@ roles:
   - name: igor_nikiforov.sysctl
   - name: galaxyproject.proftpd
     version: '0.3.2' 
+  
+  
   - name: opensearch
     src: https://github.com/trombik/ansible-role-opensearch.git
     scm: git
     version: "v2.0.1"
+  - name: trombik.x509_certificate
