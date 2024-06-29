@@ -1,4 +1,5 @@
 ---
 collections:
   - name: 'community.general'
-    version: ">=7.5.0,<=8.0.0"
+    # version: ">=7.5.0,<=8.0.0"
+  # - community.general.zypper
