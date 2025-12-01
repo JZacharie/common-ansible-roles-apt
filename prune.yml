@@ -5,7 +5,7 @@
   gather_facts: true
   tasks:
     - name: Purger toutes les images
-      command: ctr -n k8s.io images rm --all
+      command: ctr -n k8s.io images prune
       register: purge_output
       failed_when: false
 
