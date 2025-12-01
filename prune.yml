@@ -1,0 +1,15 @@
+---
+- name: Converge
+  hosts: all
+  become: true
+  gather_facts: true
+  tasks:
+    - name: Purger toutes les images
+      command: ctr -n k8s.io images rm --all
+      register: purge_output
+      failed_when: false
+
+    - name: Afficher le résultat
+      debug:
+        var: purge_output.stdout_lines
+...
